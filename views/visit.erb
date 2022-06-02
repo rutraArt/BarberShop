@@ -34,9 +34,9 @@
 	<div class="form-group">
 		<label >Ваш парикмахер</label>
 		<select name="hero" class="form-control">
-			<option>Walter White</option>
-			<option>Jessie Pinkman</option>
-			<option>Gus Fring</option>
+			<option <%= @hero == 'Walter White' ? 'selected' : '' %>>Walter White</option>
+			<option <%= @hero == 'Jessie Pinkman' ? 'selected' : '' %>>Jessie Pinkman</option>
+			<option <%= @hero == 'Gus Fring' ? 'selected' : '' %>>Gus Fring</option>
 		</select>
 	</div>
 
